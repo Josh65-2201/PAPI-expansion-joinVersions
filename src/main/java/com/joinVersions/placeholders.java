@@ -1,4 +1,4 @@
-package com.supportedversions;
+package com.joinVersions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import org.geysermc.geyser.api.util.MinecraftVersion;
 import com.viaversion.viaversion.api.Via;
 import com.viaversion.viaversion.api.protocol.version.ProtocolVersion;
 
-public class SupportedVersions extends PlaceholderExpansion {
+public class placeholders extends PlaceholderExpansion {
     @Override
     public String getAuthor(){
         return "Josh65";
