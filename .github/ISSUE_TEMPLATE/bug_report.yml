@@ -1,0 +1,38 @@
+name: Bug Report
+description: "Report an issue"
+labels: ["Type - Bug", "Needs - Dev review"]
+body:
+  - type: textarea
+    attributes:
+      label: Description
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      placeholder: |
+          1. 
+    validations:
+      required: true
+
+  - type: input
+    id: mcVersion
+    attributes:
+      label: Minecraft version
+    validations:
+      required: true
+
+  - type: input
+    id: papiVersion
+    attributes:
+      label: Placeholder API version
+    validations:
+      required: true
+
+  - type: input
+    id: expansionVersion
+    attributes:
+      label: Expansion version
+    validations:
+      required: true
