@@ -8,11 +8,11 @@
 ## Using
 Supports the below, if plugin is installed
 
-| Plugin | Placeholder |
-| -------- | ------- |
-| [Geyser](https://geysermc.org/) | %joinVersions_geyser% |
-| [ViaVersions](https://viaversion.com/) | %joinVersions_via% |
+| Plugin | Placeholders | |
+| -------- | ------- | ------- | 
+| [Geyser](https://geysermc.org/) | %joinVersions_geyser% | %joinVersions_geyserProtocols% |
+| [ViaVersions](https://viaversion.com/) | %joinVersions_via% | %joinVersions_viaProtocols% |
 
 <br>
 
-## Development
+<!--## Development-->

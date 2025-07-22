@@ -26,14 +26,24 @@ public class placeholders extends PlaceholderExpansion {
 
     @Override
     public String getVersion(){
-        return "1.0.0";
+        return "1.1.0";
     }
 
     @Override
     public String onPlaceholderRequest(Player player, String params){
+        if (params.equals("geyserProtocols")) {
+            List<Integer> protocolStrings = GeyserApi.api().supportedBedrockVersions().stream().map(MinecraftVersion::protocolVersion).collect(Collectors.toList());
+            return String.join(", ", protocolStrings.toString().replace("[", "").replace("]", ""));
+        }
+
         if (params.equals("geyser")) {
             List<String> versionStrings = GeyserApi.api().supportedBedrockVersions().stream().map(MinecraftVersion::versionString).collect(Collectors.toList());
             return String.join(", ", versionStrings);
+        }
+
+        if (params.equals("viaProtocols")) {
+            List<Integer> supportedVersions = new ArrayList<>(Via.getAPI().getSupportedVersions());
+            return supportedVersions.toString().replace("[", "").replace("]", "");
         }
 
         if (params.equals("via")) {
